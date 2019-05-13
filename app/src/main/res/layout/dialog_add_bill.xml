@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="300dp"
+    android:layout_gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+       <TextView
+           android:id="@+id/txt"
+           android:layout_gravity="center"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Thêm hóa đơn"
+           android:textSize="18sp"
+           android:textColor="@color/colorOgin"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:counterMaxLength="7"
+        app:counterEnabled="true">
+        <EditText
+            android:id="@+id/txtMaHoaDon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mã hóa đơn"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/txtNgayMua"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Ngày mua"
+            android:layout_weight="5"/>
+        <Button
+            android:background="@drawable/style3"
+            android:textColor="#FFF"
+            android:textAllCaps="false"
+            android:id="@+id/btnChon"
+            android:width="0dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chọn"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:background="@drawable/style3"
+        android:textColor="#FFF"
+        android:textAllCaps="false"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnAdd"
+        android:text="Thêm"
+        />
+
+</LinearLayout>

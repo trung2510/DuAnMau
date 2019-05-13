@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/style4"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:background="@drawable/style4"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <TextView
+            android:textSize="20sp"
+            android:textColor="@color/colorOgin"
+            android:id="@+id/txtLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thêm loại sách"/>
+        <android.support.design.widget.TextInputLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+            app:counterMaxLength="5"
+            app:counterEnabled="true">
+           <EditText
+               android:layout_marginTop="10dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:inputType="text"
+               android:imeOptions="actionNext"
+               android:textColor="@color/colorOgin"
+               android:hint="Mã loại sách"
+               android:textSize="15sp"
+               android:backgroundTint="@color/colorOgin"
+               android:id="@+id/edtMaLoaSach"
+               tools:targetApi="lollipop" />
+       </android.support.design.widget.TextInputLayout>
+
+
+       <android.support.design.widget.TextInputLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           app:counterEnabled="true"
+           app:counterMaxLength="50">
+           <EditText
+               android:imeOptions="actionNext"
+               android:inputType="text"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textColor="@color/colorOgin"
+               android:hint="Tên thể loại"
+               android:textSize="15sp"
+               android:backgroundTint="@color/colorOgin"
+               android:id="@+id/edtTenTheLoai"
+               tools:targetApi="lollipop" />
+       </android.support.design.widget.TextInputLayout>
+
+     <android.support.design.widget.TextInputLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         app:counterMaxLength="225"
+         app:counterEnabled="true">
+         <EditText
+             android:imeOptions="actionNext"
+             android:inputType="text"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:textColor="@color/colorOgin"
+             android:hint="Mô tả"
+             android:textSize="15sp"
+             android:backgroundTint="@color/colorOgin"
+             android:id="@+id/edtMoTaLoaiSach"
+             tools:targetApi="lollipop" />
+     </android.support.design.widget.TextInputLayout>
+
+
+     <android.support.design.widget.TextInputLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         >
+         <EditText
+             android:inputType="phone"
+             android:imeOptions="actionDone"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:textColor="@color/colorOgin"
+             android:hint="Vị trí"
+             android:textSize="15sp"
+             android:backgroundTint="@color/colorOgin"
+             android:id="@+id/edtViTri"
+             tools:targetApi="lollipop" />
+     </android.support.design.widget.TextInputLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:background="@drawable/style3"
+                android:textColor="#FFF"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Thêm"
+                android:id="@+id/btnAdd"
+                android:textAllCaps="false"
+                />
+
+            <Button
+                android:background="@drawable/style3"
+                android:textColor="#FFF"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Hủy"
+                android:textAllCaps="false"
+                android:id="@+id/btnCancel"
+                android:textSize="12sp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

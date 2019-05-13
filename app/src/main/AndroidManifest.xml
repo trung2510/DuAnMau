@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.vuabocphet.testduanmau">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashScreenActivity"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".HomeActivity"
+            android:label="Home"
+            android:theme="@style/AppTheme">
+
+        </activity>
+        <activity
+            android:name=".UserActivity"
+            android:label="Người dùng"
+            android:parentActivityName=".HomeActivity"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name=".GenreActivity"
+            android:label="Quản lí loại sách"
+            android:parentActivityName=".HomeActivity"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name=".BookActivity"
+            android:label="Quản lí sách"
+            android:parentActivityName=".HomeActivity"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:parentActivityName=".HomeActivity"
+            android:name=".BookSaleActivity"
+            android:label="Top 10 sách bán chạy"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name=".StatisticActivity"
+            android:parentActivityName=".HomeActivity"
+            android:label="Thống kê"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name=".BillActivity"
+            android:label="Hóa đơn"
+            android:parentActivityName=".HomeActivity"
+            android:theme="@style/AppTheme1" />
+        <activity android:name=".BilldetailActivity"
+            android:parentActivityName=".BillActivity"
+            android:theme="@style/AppTheme1">
+
+        </activity>
+    </application>
+
+</manifest>
