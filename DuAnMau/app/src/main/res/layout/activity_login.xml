@@ -1,0 +1,124 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".LoginActivity">
+
+
+    <ImageView
+        android:layout_width="244dp"
+        android:layout_height="79dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/logo_3" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="19dp"
+        android:layout_marginTop="16dp"
+        android:text="Tên đăng nhập"
+        android:textColor="@color/cam"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/edtUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/cam"
+        android:hint="@string/username1"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:textColor="@color/cam"
+        android:textColorHint="#4A000000"
+        android:textSize="10sp"
+        tools:targetApi="lollipop" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="19dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/password"
+        android:textColor="@color/cam"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/edtPassWord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/cam"
+        android:hint="@string/password1"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:textColor="@color/cam"
+        android:textColorHint="#4A000000"
+        android:textSize="10sp"
+        tools:targetApi="lollipop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/ckbRememberPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:shadowColor="#464616" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nhớ mật khẩu"
+            android:textColor="@color/cam"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnDangNhap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/cam"
+        android:text="Đăng nhập"
+        android:textAllCaps="false"
+        android:textColor="#FFF" />
+
+    <TextView
+        android:id="@+id/txtForgotpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="Quên mật khẩu"
+        android:textColor="@color/cam"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/txtContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="Liên hệ"
+        android:textColor="@color/cam"
+        android:textSize="15sp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/flbForMatText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:src="@android:drawable/ic_menu_delete" />
+
+
+</LinearLayout>

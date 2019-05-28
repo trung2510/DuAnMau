@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DuAnMau</string>
+    <string name="nguoidung">Người dùng</string>
+    <string name="password">Password</string>
+    <string name="password1">************</string>
+    <string name="username1">Phan Quốc Trung</string>
+</resources>
